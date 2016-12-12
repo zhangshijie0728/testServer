@@ -10,13 +10,13 @@
 // +----------------------------------------------------------------------
 
 return [
-    '__pattern__' => [
-        'name' => '\w+',
-    ],
-    '[hello]'     => [
-        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-        ':name' => ['index/hello', ['method' => 'post']],
-    ],
+//    '__pattern__' => [
+//        'name' => '\w+',
+//    ],
+//    '[hello]'     => [
+//        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
+//        ':name' => ['index/hello', ['method' => 'post']],
+//    ],
 //
 //    //'hello' => ['admin/Index/hello', ['before_behavior'=>'\test\admin\behavior']],
 //
@@ -24,6 +24,7 @@ return [
     '[home]' => [
         'before_behavior' => '\test\admin\behavior',
         'hello' => ['admin/Index/getHello'],
+        'index' => ['admin/Index/index'],
         'user' => ['admin/Index/postUser'],
         'method' => 'get'
     ],

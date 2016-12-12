@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'default_return_type'    => 'html',
+    'default_return_type'    => 'json',
 ];

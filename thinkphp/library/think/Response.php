@@ -299,6 +299,7 @@ class Response
      */
     public function getContent()
     {
+
         if (null == $this->content) {
             $content = $this->output($this->data);
 
