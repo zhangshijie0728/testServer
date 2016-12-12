@@ -5,13 +5,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-namespace app\index\controller;
+namespace test\index\controller;
 
 class User
 {
     public function index()
     {
-        var_dump([
+        return json([
             'status' => 1,
             'data'   => [
                 'name' => 'test',
@@ -20,7 +20,6 @@ class User
             ], 
             'message' => '获取用户信息成功！'
         ]);
-        exit;
     }
 }
 
